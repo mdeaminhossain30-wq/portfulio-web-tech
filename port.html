@@ -1,51 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>My Portfolio</title>
-
-<link rel="stylesheet" href="port.css">
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="port.css">
 </head>
 <body>
 
-<header>
+    <!-- Header Section -->
+    <header>
+        <h2>Md. Eamin</h2>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
 
-<h2>Portfolio</h2>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div>
+            <h1>Hello. I'm <span>MD. EAMIN</span></h1>
+            <p>Student | UI Designer| Web Developer</p>
+        </div>
+    </section>
 
-<nav>
-<a href="#">Home</a>
-<a href="#about">About</a>
-<a href="#skills">Skills</a>
-<a href="#projects">Projects</a>
-<a href="#contact">Contact</a>
-</nav>
-
-</header>
-
-<section class="hero">
-
-<div>
-
-<h1>Hello. I'm <span>MD. EAMIN </span></h1>
-
-<p>Student | UI Designer | Web Developer </p>
-
-</div>
-
-</section>
-
-<section id="about">
-
-<h2 class="title">About Me</h2>
-
-<section id="about">
-
-    <h2 class="title"></h2>
-
+    <!-- About Section -->
+    <section id="about">
+        <h2 class="title">About Me</h2>
+        
+        <div class="about-content">
             <h3>Hello. I'm Eamin Hossain</h3>
-
             <p>
                 I am a passionate Full Stack Web Developer with knowledge of
                 HTML, CSS, JavaScript, PHP, Django, Python, and MySQL.
@@ -53,150 +41,95 @@
                 My goal is to become a professional Software Engineer and continuously
                 improve my programming skills.
             </p>
-
-            <br>
-
+            
             <h3>🎓 Education</h3>
+            <div class="education">
+                <div class="edu-box">
+                    <h4>📘 JSC & SSC</h4>
+                    <p><strong>Institution:</strong> Dharmupur Nazim Ali School and College</p>
+                    <p><strong>Group:</strong> Science</p>
+                    <p><strong>Passing Year:</strong> 2019</p>
+                </div>
 
-            <p><strong>JSC & SSC:</strong>Dharmupur Nazim Ali School and College</p>
-            <p>Group: Science</p>
-            <p>Passing Year: 2019</p>
+                <div class="edu-box">
+                    <h4>📗 HSC</h4>
+                    <p><strong>Institution:</strong> Mia Bazar College</p>
+                    <p><strong>Group:</strong> Science</p>
+                    <p><strong>Passing Year:</strong> 2021</p>
+                </div>
 
-            <br>
-
-            <p><strong>HSC:</strong>Mia Bazar College</p>
-            <p>Group: Science</p>
-            <p>Passing Year: 2021</p>
-
-            <br>
-
-            <p><strong>University:</strong>Bangladesh Army International University Science and Technology</p>
-            <p>Department: Computer Science & Engineering (CSE)</p>
-            <p>Current Semester: 6th Semester</p>
-
+                <div class="edu-box">
+                    <h4>🎓 Bachelor of Science (B.Sc.)</h4>
+                    <p><strong>University:</strong> Bangladesh Army International University of Science and Technology (BAIUST)</p>
+                    <p><strong>Department:</strong> Computer Science & Engineering (CSE)</p>
+                    <p><strong>Current Semester:</strong> 6th Semester</p>
+                </div>
+            </div>
         </div>
+    </section>
 
-    </div>
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2 class="title">My Skills</h2>
+        <div class="skills-container">
+            <div class="skill"><h3>HTML</h3></div>
+            <div class="skill"><h3>CSS</h3></div>
+            <div class="skill"><h3>JavaScript</h3></div>
+            <div class="skill"><h3>PHP</h3></div>
+            <div class="skill"><h3>Django</h3></div>
+            <div class="skill"><h3>MySQL</h3></div>
+        </div>
+    </section>
 
-</section>
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2 class="title">Projects</h2>
+        <div class="projects-container">
+            <div class="card">
+                <div class="card-content">
+                    <h3>Baby Bliss Store</h3>
+                    <p>E-Commerce Website using Django.</p>
+                </div>
+            </div>
 
-</div>
+            <div class="card">
+                <div class="card-content">
+                    <h3>Cineverse</h3>
+                    <p>Cinema Hall Management system using PHP.</p>
+                </div>
+            </div>
 
-</section>
+            <div class="card">
+                <div class="card-content">
+                    <h3>Nutrishare</h3>
+                    <p>Food sharing platform using Django.</p>
+                </div>
+            </div>
+             <div class="card">
+                <div class="card-content">
+                    <h3>IoT-Based Temperature Detection System</h3>
+                    <p>An IoT-based temperature monitoring system using ESP32 and sensors to measure real-time temperature and display accurate readings for continuous environmental monitoring.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<section id="skills">
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2 class="title">Contact Me</h2>
+        <div class="contact-content">
+            <h3>Eamin Hossain</h3>
+            <p>📧 Email: <a href="mailto:mdeaminhossain30@gmail.com">mdeaminhossain30@gmail.com</a></p>
+            <p>📱 Phone: +8801643825635</p>
+            <p>📍 Address: Cumilla, Bangladesh</p>
+            <p>💻 GitHub: <a href="https://github.com/mdeaminhossain30-wq" target="_blank">github.com/mdeaminhossain30-wq</a></p>
+        </div>
+    </section>
 
-<h2 class="title">My Skills</h2>
-
-<div class="skills">
-
-<div class="skill">
-<h3>HTML</h3>
-</div>
-
-<div class="skill">
-<h3>CSS</h3>
-</div>
-
-<div class="skill">
-<h3>JavaScript</h3>
-</div>
-
-<div class="skill">
-<h3>PHP</h3>
-</div>
-
-<div class="skill">
-<h3>Django</h3>
-</div>
-
-<div class="skill">
-<h3>MySQL</h3>
-</div>
-
-</div>
-
-</section>
-
-<section id="projects">
-
-<h2 class="title">Projects</h2>
-
-<div class="projects">
-
-<div class="card">
-
-
-<div class="card-content">
-
-<h3>Baby Bliss Store</h3>
-
-<p>E-Commerce Website using Django.</p>
-
-</div>
-
-</div>
-
-<div class="card">
-
-
-<div class="card-content">
-
-<h3>Cineverse</h3>
-
-<p> Cinema Hall Management system using PHP.</p>
-
-</div>
-
-</div>
-
-<div class="card">
-
-
-<div class="card-content">
-
-<h3>Nutrishare </h3>
-
-<p>Food sharing platform using Django.</p>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-<section id="contact">
-
-<h2 class="title">Contact Me</h2>
-
-<div class="contact">
-
-<h3>Eamin Hossain</h3>
-
-<p>📧 Email : mdeaminhossain30@gmail.com</p>
-
-<p>📱 Phone : +8801643825635</p>
-
-<p>📍 Address : Cumilla, Bangladesh</p>
-
-<p>
-💻 GitHub :
-<a href="https://github.com/mdeaminhossain30-wq" target="_blank">
-https://github.com/mdeaminhossain30-wq
-</a>
-</p>
-
-</div>
-
-</section>
-
-<footer>
-
-<p>© 2026 EAMIN | All Rights Reserved.</p>
-
-</footer>
-
+    <!-- Footer Section -->
+    <footer>
+        <p>© 2026 EAMIN | All Rights Reserved.</p>
+    </footer>
+<script src="script.js"></script>
 </body>
 </html>

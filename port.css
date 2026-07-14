@@ -1,172 +1,298 @@
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:Arial, Helvetica, sans-serif;
-}
-html{
-    scroll-behavior:smooth;
-}
-body{
-    background:#f5f5f5;
-    color:#333;
-}
-header{
-    background:#0f172a;
-    color:white;
-    padding:20px 80px;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    position:sticky;
-    top:0;
-    z-index:1000;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-header h2{
-    color:#38bdf8;
+html {
+    scroll-behavior: smooth;
 }
 
-nav a{
-    color:white;
-    text-decoration:none;
-    margin-left:20px;
-    transition:.3s;
-}
-nav a:hover{
-    color:#38bdf8;
-}
-.hero{
-    height:90vh;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    text-align:center;
-    background:linear-gradient(to right,#0f172a,#1e293b);
-    color:white;}
-.hero h1{
-    font-size:55px;}
-.hero span{
-    color:#38bdf8;}
-.hero p{
-    margin:20px 0;
-    font-size:20px;}
-.btn{
-    display:inline-block;
-    padding:12px 25px;
-    background:#38bdf8;
-    color:white;
-    text-decoration:none;
-    border-radius:8px;
-    transition:.3s;}
-.btn:hover{
-    background:#0284c7;}
-section{
-    padding:70px 80px;}
-.title{
-    text-align:center;
-    font-size:35px;
-    margin-bottom:40px;}
-.about{
-    display:grid;
-    grid-template-columns:1fr 2fr;
-    gap:40px;
-    align-items:center;}
-.about img{
-    width:250px;
-    border-radius:50%;
-    display:block;
-    margin:auto;
-    box-shadow:0 0 20px rgba(0,0,0,.2);}
-.skills{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
-    gap:20px;}
-.skill{
-    background:white;
-    padding:25px;
-    text-align:center;
-    border-radius:10px;
-    box-shadow:0 5px 15px rgba(0,0,0,.1);
-    transition:.3s;}
-.skill:hover{
-    transform:translateY(-8px);
-    background:#38bdf8;
-    color:white;}
-.projects{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-    gap:25px;}
-.card{
-    background:white;
-    border-radius:10px;
-    overflow:hidden;
-    box-shadow:0 5px 15px rgba(0,0,0,.1);
-    transition:.3s;}
-
-.card:hover{
-    transform:translateY(-10px);}
-.card img{
-    width:100%;
-    height:180px;
-    object-fit:cover;}
-.card-content{
-    padding:20px;}
-
-.contact{
-    max-width:600px;
-    margin:auto;}
-
-.contact input,
-.contact textarea{
-    width:100%;
-    padding:12px;
-    margin:10px 0;
-    border:1px solid #ccc;
-    border-radius:6px;}
-.contact button{
-    padding:12px 25px;
-    background:#38bdf8;
-    color:white;
-    border:none;
-    border-radius:6px;
-    cursor:pointer;
-    transition:.3s;
+body {
+    background: #f8fafc; 
+    color: #1e293b; /* মূল বডি টেক্সট আরও ডার্ক করা হয়েছে */
+    line-height: 1.6;
 }
 
-.contact button:hover{
-    background:#0284c7;
+/* Header Section */
+header {
+    background: #0f172a;
+    color: white;
+    padding: 20px 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
-footer{
-    background:#0f172a;
-    color:white;
-    text-align:center;
-    padding:20px;
+header h2 {
+    color: #38bdf8;
+    font-size: 24px;
 }
 
-@media(max-width:768px){
-
-header{
-    flex-direction:column;
-    padding:20px;
+nav a {
+    color: #e2e8f0; /* নেভিগেশন লিংক আরও উজ্জ্বল ডার্ক ব্যাকগ্রাউন্ডের জন্য */
+    text-decoration: none;
+    margin-left: 25px;
+    font-weight: 500;
+    transition: .3s;
 }
 
-nav{
-    margin-top:15px;
+nav a:hover {
+    color: #38bdf8;
 }
 
-.about{
-    grid-template-columns:1fr;
-    text-align:center;
+/* Hero Section */
+.hero {
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(135deg, #0f172a, #1e293b);
+    color: white;
+    padding: 0 20px;
 }
 
-.hero h1{
-    font-size:38px;
+.hero h1 {
+    font-size: 55px;
+    margin-bottom: 10px;
 }
 
-section{
-    padding:50px 20px;
+.hero span {
+    color: #38bdf8;
 }
 
+.hero p {
+    font-size: 22px;
+    color: #f1f5f9; /* হিরো সেকশনের সাবটাইটেল আরও স্পষ্ট করা হয়েছে */
+    word-spacing: 2px;
+}
+
+/* Global Section Style */
+section {
+    padding: 80px 80px;
+}
+
+.title {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 50px;
+    color: #0f172a; /* সেকশন টাইটেল একদম ডার্ক */
+    position: relative;
+}
+
+.title::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 4px;
+    background: #38bdf8;
+    margin: 10px auto 0 auto;
+    border-radius: 2px;
+}
+
+/* About Section */
+.about-content {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.about-content h3 {
+    font-size: 24px;
+    color: #0f172a; /* গাঢ় কালো */
+    margin-bottom: 15px;
+}
+
+.about-content p {
+    font-size: 17px;
+    color: #0f172a; /* প্যারাগ্রাফের লেখা একদম ডার্ক করা হলো */
+    margin-bottom: 40px;
+    text-align: justify;
+}
+
+/* Education Layout */
+.education {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    margin-top: 20px;
+}
+
+.edu-box {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    border-left: 4px solid #38bdf8;
+    transition: .3s;
+}
+
+.edu-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.edu-box h4 {
+    color: #0f172a; /* এডুকেশন টাইটেল ডার্ক */
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.edu-box p {
+    font-size: 15px;
+    margin-bottom: 5px;
+    color: #1e293b; /* ভেতরের টেক্সট ডার্ক করা হয়েছে */
+}
+
+/* Skills Section */
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.skill {
+    background: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+    transition: .3s;
+    border: 1px solid #cbd5e1;
+}
+
+.skill h3 {
+    font-size: 18px;
+    color: #0f172a; /* স্কিল টেক্সট ডার্ক */
+}
+
+.skill:hover {
+    transform: translateY(-5px);
+    background: #38bdf8;
+    border-color: #38bdf8;
+}
+
+.skill:hover h3 {
+    color: white; /* হোভার করলে লেখাটি সাদা দেখাবে */
+}
+
+/* Projects Section */
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.card {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+    transition: .3s;
+    border: 1px solid #cbd5e1;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+}
+
+.card-content {
+    padding: 25px;
+}
+
+.card-content h3 {
+    font-size: 20px;
+    color: #0f172a; /* প্রজেক্টের নাম ডার্ক */
+    margin-bottom: 10px;
+}
+
+.card-content p {
+    font-size: 15px;
+    color: #1e293b; /* প্রজেক্টের বিবরণ ডার্ক */
+}
+
+/* Contact Section */
+.contact-content {
+    max-width: 500px;
+    margin: 0 auto;
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+    text-align: center;
+    border: 1px solid #cbd5e1;
+}
+
+.contact-content h3 {
+    font-size: 22px;
+    color: #0f172a; /* নাম ডার্ক */
+    margin-bottom: 20px;
+}
+
+.contact-content p {
+    font-size: 16px;
+    margin-bottom: 12px;
+    color: #0f172a; /* কন্টাক্ট ডিটেইলস একদম স্পষ্ট ও ডার্ক */
+}
+
+.contact-content a {
+    color: #0284c7;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact-content a:hover {
+    text-decoration: underline;
+}
+
+/* Footer Section */
+footer {
+    background: #0f172a;
+    color: #cbd5e1;
+    text-align: center;
+    padding: 25px;
+    font-size: 14px;
+    border-top: 1px solid #1e293b;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    nav {
+        margin-top: 15px;
+    }
+    
+    nav a {
+        margin: 0 10px;
+    }
+
+    .hero h1 {
+        font-size: 38px;
+    }
+    
+    .hero p {
+        font-size: 18px;
+    }
+
+    section {
+        padding: 60px 20px;
+    }
+    
+    .title {
+        font-size: 28px;
+    }
 }
